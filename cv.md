@@ -82,4 +82,4 @@ I've taken part in writing several projects
 ---
 * Russian - native speaker
 * English - B2
-
+![certificate photo](Screenshot.png)
