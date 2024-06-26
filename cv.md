@@ -81,3 +81,20 @@ function main() {
 }
 ```
 
+### Work expirience
+--- 
+took part in writing several projects
+
+- a small diploma application on mvc architecture to reduce url-adresses for registered users (https://github.com/SwetlanaAng/diplom-project)
+- an educational project on JavaScript (https://github.com/SwetlanaAng/food)
+
+### Education
+--- 
+1. Professional retraining at the Russian Economic University named after G.V. Plekhanov under the program "Front-end development and web design"
+2. Programming online school "It-proger" full-stack programmer
+3. UDEMI "web-developer" and "JavaScript and React" in process
+
+### Languages
+---
+* Russian - native speaker
+* English - B2
