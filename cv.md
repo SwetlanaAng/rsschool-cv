@@ -23,69 +23,52 @@ A few years ago I decided to try myself in something new for me and promising, s
 - JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript. Webpack)
 - React (basics)
 - Gulp
+- VS Code
 - Git/GitHub
 - Avocode, Figma
 
 ### Code examples
 ---
 ```
-function formMap(set1, set2, set3, map) {
-    map = runThroughSet(set1, map);
-    map = runThroughSet(set2, map);
-    map = runThroughSet(set3, map);
-    return map;
-}
+The task: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] 
+such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+The solution:
+let threeSum = function(nums) {
+    let res = new Set();
+    nums.sort((a,b)=>a-b)
+    for(let i = 0; i<nums.length-2; i++){
+        let l = i+1;
+        let h = nums.length-1;
+        if (i > 0 && nums[i] === nums[i - 1]) continue;
+        
+        while(l<h && nums[i]<=0){
+            
+            let sum = nums[i] + nums[l] + nums[h];
+            if(sum>0){
+               h--;
+           }
+           else if(sum<0){
+               l++
+           } else if (sum ==0 && l!=h){
+                res.add([nums[i], nums[l], nums[h]]);
+                
+                l++;
+                h--;
+                while (nums[l] == nums[l - 1]) l++;
+                while (nums[h] == nums[h + 1]) h--;
+           }  
+        } 
+    }res = Array.from(res); 
+       return res
+};
 
-function runThroughSet(set, map) {
-    for (let el of set) {
-        if (map.has(el)) {
-            map.set(el, map.get(el)+1)
-        } else {
-            map.set(el, 1)
-        }
-    }
-    return map;
-}
-
-function formAnswer(map) {
-    let arr = [];
-    for (let el of map) {
-        if (el[1] >= 2) {
-            arr.push(el[0]);
-        }
-    }
-    arr.sort((a,b)=>a-b);
-    
-    return arr;
-}
-
-    
-function main() {
-
-
-    let n1 = +readline(); //function that accept the data from the task
-    let arr1 = readline().split(' ');
-    let set1 = new Set(arr1);
-    let n2 = +readline();
-    let arr2 = readline().split(' ');
-    let set2 = new Set(arr2);
-    let n3 = +readline();
-    let arr3 = readline().split(' ');
-    let set3 = new Set(arr3);
-    let myMap = new Map();
-    myMap = formMap(set1, set2, set3, myMap)
-
-    
-    print(formAnswer(myMap).join(' ')); 
-    return 0;    
-}
 ```
 
-### Work expirience
+### Work experience
 --- 
-took part in writing several projects
+I've taken part in writing several projects
 
-- a small diploma application on mvc architecture to reduce url-adresses for registered users (https://github.com/SwetlanaAng/diplom-project)
+- a small diploma application on mvc architecture to reduce url-addresses for registered users (https://github.com/SwetlanaAng/diplom-project)
 - an educational project on JavaScript (https://github.com/SwetlanaAng/food)
 
 ### Education
@@ -93,8 +76,10 @@ took part in writing several projects
 1. Professional retraining at the Russian Economic University named after G.V. Plekhanov under the program "Front-end development and web design"
 2. Programming online school "It-proger" full-stack programmer
 3. UDEMI "web-developer" and "JavaScript and React" in process
+4. RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 
 ### Languages
 ---
 * Russian - native speaker
 * English - B2
+![certificate photo](/Users/svetlanaangeliuk/Desktop/Screenshot 2024-06-26 at 18.44.34)
