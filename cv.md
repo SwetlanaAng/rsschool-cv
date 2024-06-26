@@ -82,4 +82,4 @@ I've taken part in writing several projects
 ---
 * Russian - native speaker
 * English - B2
-![certificate photo](/Users/svetlanaangeliuk/Desktop/Screenshot 2024-06-26 at 18.44.34)
+! [certificate photo](/Users/svetlanaangeliuk/Desktop/Screenshot.png)
