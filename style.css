@@ -1,3 +1,17 @@
 body {
     font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(251, 214, 46);
+}
+.menu {
+    display: flex;
+}
+footer {
+    background-color: rgb(251, 214, 46);
+}
+footer .logo_school {
+    width: 210px;
+}
+.github_link:hover{
+    background-color: red;
 }
