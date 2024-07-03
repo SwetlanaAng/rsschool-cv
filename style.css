@@ -22,7 +22,7 @@ a {
 
 .menu {
     background-color: rgb(251, 214, 46);
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
