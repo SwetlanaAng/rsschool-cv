@@ -10,100 +10,98 @@
 <body>
     <div class="main-container">
         <header>
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="#about_me">About me</a></li>
-                            <li><a href="#code">Code</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#languages">Languages</a></li>
-                        </ul>
-                    </nav>
-            </header>
-            <main class="container">
-                <div class="info">
-                    <h4>Front-End Developer</h4>
-                    <h1>
-                        Angeliuk Svetlana
-                    </h1>
-                    <hr>
-                    <section class="about_me" id="about_me">
-                        <h4>About me</h4>
-                        <p>I can be a hardworking, curious and comfortable employee. I have excellent soft skills! I can become a wonderful part of a team and be relied upon and trusted to complete important tasks. I can and love to learn. Disciplined. A few years ago I decided to try myself in something new for me and promising, so I tried front-end development. I’ve hit the mark and feel the strength to develop in this direction,reach the goal to become a real professional</p>
-                    </section>
-                    <section class="code" id="code">
-                        <h4>Code example</h4>
-                        <pre>
-                            <code>
-        The task: Given an integer array nums,
-        return all the triplets [nums[i], nums[j], nums[k]]
-        such that i != j, i != k,
-        and j != k, and nums[i] + nums[j] + nums[k] == 0.
-        The solution:
-        let threeSum = function(nums) {
-            let res = new Set();
-            nums.sort((a,b)=&gt;a-b)
-            for(let i = 0; i&lt;nums.length-2; i++){
-                let l = i+1;
-                let h = nums.length-1;
-                if (i &gt; 0 &amp;&amp; nums[i] === nums[i - 1]) continue;
-                while(l&lt;h &amp;&amp; nums[i]&lt;=0){
-                    let sum = nums[i] + nums[l] + nums[h];
-                    if(sum&gt;0){
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about_me">About me</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="info">
+                <h4>Front-End Developer</h4>
+                <h1>Angeliuk Svetlana</h1>
+                <hr>
+                <section class="about_me" id="about_me">
+                    <h4>About me</h4>
+                    <p>I can be a hardworking, curious and comfortable employee. I have excellent soft skills! I can become a wonderful part of a team and be relied upon and trusted to complete important tasks. I can and love to learn. Disciplined. A few years ago I decided to try myself in something new for me and promising, so I tried front-end development. I’ve hit the mark and feel the strength to develop in this direction,reach the goal to become a real professional</p>
+                </section>
+                <section class="code" id="code">
+                    <h4>Code example</h4>
+                    <pre>
+                        <code>
+    The task: Given an integer array nums,
+    return all the triplets [nums[i], nums[j], nums[k]]
+    such that i != j, i != k,
+    and j != k, and nums[i] + nums[j] + nums[k] == 0.
+    The solution:
+    let threeSum = function(nums) {
+        let res = new Set();
+        nums.sort((a,b)=&gt;a-b)
+        for(let i = 0; i&lt;nums.length-2; i++){
+            let l = i+1;
+            let h = nums.length-1;
+            if (i &gt; 0 &amp;&amp; nums[i] === nums[i - 1]) continue;
+            while(l&lt;h &amp;&amp; nums[i]&lt;=0){
+                let sum = nums[i] + nums[l] + nums[h];
+                if(sum&gt;0){
+                h--;
+            }
+            else if(sum&lt;0){
+                l++
+            } else if (sum ==0 &amp;&amp; l!=h){
+                    res.add([nums[i], nums[l], nums[h]]);
+                    l++;
                     h--;
-                }
-                else if(sum&lt;0){
-                    l++
-                } else if (sum ==0 &amp;&amp; l!=h){
-                        res.add([nums[i], nums[l], nums[h]]);
-                        l++;
-                        h--;
-                        while (nums[l] == nums[l - 1]) l++;
-                        while (nums[h] == nums[h + 1]) h--;
-                }
-                }
-            }res = Array.from(res);
-            return res
-        };
+                    while (nums[l] == nums[l - 1]) l++;
+                    while (nums[h] == nums[h + 1]) h--;
+            }
+            }
+        }res = Array.from(res);
+        return res
+    };
                         </code>
                     </pre>
-                    </section>
-                    <section class="experience" id="experience">
-                        <h4>Work experience</h4>
-                        <p>I’ve taken part in writing several projects</p>
-                        <ul>
-                            <li>a small diploma application on mvc architecture to reduce url-addresses for registered users (https://github.com/SwetlanaAng/diplom-project)</li>
-                            <li>an educational project on JavaScript (https://github.com/SwetlanaAng/food)</li>
-                        </ul>
-                    </section>
-                    <section class="education" id="education">
-                        <h4>My education</h4>
-                        <ol>
-                            <li>Professional retraining at the Russian Economic University named after G.V. Plekhanov under the program “Front-end development and web design”</li>
-                            <li>Programming online school “It-proger” full-stack programmer</li>
-                            <li>UDEMI “web-developer” and “JavaScript and React” in process</li>
-                            <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
-                        </ol>
-                    </section>
-                    <section class="languages" id="languages">
-                        <h4>Languages</h4>
-                        <ul>
-                            <li>Russian - native speaker</li>
-                            <li>English - B2</li>
-                            <img src="./img /Screenshot.png" alt="certificate" width="600px">
-                        </ul>
-                    </section>
+                </section>
+                <section class="experience" id="experience">
+                    <h4>Work experience</h4>
+                    <p>I’ve taken part in writing several projects</p>
+                    <ul>
+                        <li>a small diploma application on mvc architecture to reduce url-addresses for registered users (https://github.com/SwetlanaAng/diplom-project)</li>
+                        <li>an educational project on JavaScript (https://github.com/SwetlanaAng/food)</li>
+                    </ul>
+                </section>
+                <section class="education" id="education">
+                    <h4>My education</h4>
+                    <ol>
+                        <li>Professional retraining at the Russian Economic University named after G.V. Plekhanov under the program “Front-end development and web design”</li>
+                        <li>Programming online school “It-proger” full-stack programmer</li>
+                        <li>UDEMI “web-developer” and “JavaScript and React” in process</li>
+                        <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                    </ol>
+                </section>
+                <section class="languages" id="languages">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Russian - native speaker</li>
+                        <li>English - B2</li>
+                    </ul>
+                    <img src="./img/Screenshot.png" alt="certificate" width="600">
+                </section>
             </div>
             <aside class="aside">
-                <img src="./img /photo.jpg" width="100%" alt="photo">
+                <img class="my_photo" src="./img/photo.jpg" alt="photo">
                 <section class="contacts" id="contacts">
                     <h4>Contacts</h4>
                     <ul>
                         <li class="item"><span class="item_text">location:<a href="https://www.google.com/maps/d/viewer?f=q&source=embed&geocode&g=1023%20Budapest%2C%20Frankel%20Le%C3%B3%20%C3%BAt%2030-34&ie=UTF8&hq&hnear=1023%20Budapest%2C%20II.%20District%2C%20Frankel%20Le%C3%B3%20Way%2034%2C%20Hungary&showlabs=1&oe=UTF8&msa=0&mid=1oDlRSUUTrY8J2Lt9le5jbBgXIiI&ll=47.51114783310088%2C19.005586070827434&z=14"> Budapest, Hungary</a></span> </li>
-                        <li class="item"><span class="item_text">Phone:<a href="tel:+36 20 452 1001">+36204521001</a></span></li>
-                        <li class="item"><span class="item_text">Email:<a href="mailto: angeliuksvetlana128@gmail.com">angeliuksvetlana128@gmail.com</a></span></li>
+                        <li class="item"><span class="item_text">Phone:<a href="tel:+36204521001">+36204521001</a></span></li>
+                        <li class="item"><span class="item_text">Email:<a href="mailto:angeliuksvetlana128@gmail.com">angeliuksvetlana128@gmail.com</a></span></li>
                         <li class="item"><span class="item_text">GitHub:<a href="https://github.com/SwetlanaAng">SwetlanaAng</a></span></li>
                         <li class="item"><span class="item_text">Telegram:<a href="https://web.telegram.org">@SvetlanaAngely</a></span></li>
                         <li class="item"><span class="item_text">Discord: swetlanaang_00593_88551</span></li>
@@ -125,9 +123,19 @@
             </aside>
         </main>
         <footer class="footer">
-            <div class="footer_img"><img src="./img /rsschool-logo.svg" alt="logo school" class="logo_school"></div>
-            <div class="footer_course_link"><a href="https://rs.school/courses/javascript-ru" class="school">JavaScript / Front-end Course</a><br><span>2024</span></div>
-            <div class="footer_git_link"><a class="github_link" href="https://github.com/SwetlanaAng"><img width="120px" src="./icons/github-icon-1-logo-svgrepo-com.svg" alt="github logo"></a></div>
+            <div class="footer_img">
+                <img class="logo_school" src="./img/rsschool-logo.svg" alt="logo school">
+            </div>
+            <div class="footer_course_link">
+                <a class="school" href="https://rs.school/courses/javascript-ru">JavaScript / Front-end Course</a>
+                <br>
+                <span>2024</span>
+            </div>
+            <div class="footer_git_link">
+                <a class="github_link" href="https://github.com/SwetlanaAng">
+                    <img width="120" src="./icons/github-icon-1-logo-svgrepo-com.svg" alt="github logo">
+                </a>
+            </div>
         </footer>
     </div>
 </body>

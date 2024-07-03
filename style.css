@@ -3,77 +3,94 @@ body {
     font-family: "Poppins", Arial, sans-serif;
 }
 
-.main-container{
-    width: 1300px;
-    background-color: #fff;
+.main-container {
     margin: 40px auto;
+    width: 1300px;
+    background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
-.container{
+
+.container {
     max-width: 1300px;
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
     
 }
+
 .info {
-    padding: 40px;
+    padding: 50px;
     line-height: 30px;
 }
+
 a {
     text-decoration: none;
-    color:rgb(43, 47, 59);
+    color:#2b2f3b;
 }
+
 section {
     padding: 40px 20px 10px 20px;
 }
+
 .menu {
-    background-color: rgb(251, 214, 46);
-    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color:rgb(43, 47, 59);
+    height: 70px;
     font-weight: 600;
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #fbd62e;
+    color:rgb(43, 47, 59);
+    list-style-type: none;
 }
+
 a:hover {
-    color:rgb(255, 255, 255);
+    color:#ffffff;
     text-decoration: underline;
 }
-h4{
-    color: rgb(251, 214, 46);
+
+h4 {
+    color: #fbd62e;
 }
-.aside{
+
+.aside {
     background-color:rgb(43, 47, 59);
 }
+
+.my_photo {
+    width: 100%;
+}
+
 .item {
-    color: rgb(251, 214, 46);
+    color: #fbd62e;
     padding-top: 20px;
 }
-.item_text{
-    color: white;
+
+.item_text {
+    color: #ffffff;
 }
-.item a{
-    color: white;
+
+.item a {
+    color: #ffffff;
 }
-.contacts h4{
+
+.contacts h4,
+.skills h4 {
     padding-left: 30px;
 }
-.skills h4{
-    padding-left: 30px;
-}
+
 .footer {
-    background-color: rgb(251, 214, 46);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fbd62e;
 }
-.footer_course_link{
+
+.footer_course_link {
     text-align: center;
 }
+
 .logo_school {
     width: 210px;
 }
