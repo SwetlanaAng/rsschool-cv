@@ -1,11 +1,40 @@
 body {
-    font-size: 16px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(251, 214, 46);
+    background-color: #f5f7fa;
+    font-family: "Montserrat", sans-serif;
 }
-.menu {
+
+.main-container{
+    width: 1300px;
+    background-color: #fff;
+    margin: 40px auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.container{
+    max-width: 1300px;
     display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
 }
+a {
+    text-decoration: none;
+    color:rgb(43, 47, 59);
+}
+
+.menu {
+    background-color: rgb(251, 214, 46);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(43, 47, 59);
+    font-weight: 600;
+    list-style-type: none;
+}
+a:hover {
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
 footer {
     background-color: rgb(251, 214, 46);
 }
