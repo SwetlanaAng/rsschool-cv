@@ -23,10 +23,16 @@ body {
     line-height: 30px;
 }
 
+.info h2 {
+    font-size: 20px;
+    color:#fbd62e;
+}
+
 a {
     text-decoration: none;
     color:#2b2f3b;
 }
+
 
 section {
     padding: 40px 20px 10px 20px;
@@ -48,6 +54,9 @@ section {
 a:hover {
     color:#ffffff;
     text-decoration: underline;
+}
+.experience a:hover {
+    color: #fbd62e;
 }
 
 h4 {
