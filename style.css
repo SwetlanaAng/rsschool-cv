@@ -1,6 +1,6 @@
 body {
     background-color: #f5f7fa;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 .main-container{
@@ -14,12 +14,19 @@ body {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
+    
+}
+.info {
+    padding: 40px;
+    line-height: 30px;
 }
 a {
     text-decoration: none;
     color:rgb(43, 47, 59);
 }
-
+section {
+    padding: 40px 20px 10px 20px;
+}
 .menu {
     background-color: rgb(251, 214, 46);
     height: 70px;
@@ -29,18 +36,44 @@ a {
     color:rgb(43, 47, 59);
     font-weight: 600;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 a:hover {
     color:rgb(255, 255, 255);
     text-decoration: underline;
 }
-
-footer {
+h4{
+    color: rgb(251, 214, 46);
+}
+.aside{
+    background-color:rgb(43, 47, 59);
+}
+.item {
+    color: rgb(251, 214, 46);
+    padding-top: 20px;
+}
+.item_text{
+    color: white;
+}
+.item a{
+    color: white;
+}
+.contacts h4{
+    padding-left: 30px;
+}
+.skills h4{
+    padding-left: 30px;
+}
+.footer {
     background-color: rgb(251, 214, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-footer .logo_school {
+.footer_course_link{
+    text-align: center;
+}
+.logo_school {
     width: 210px;
-}
-.github_link:hover{
-    background-color: red;
 }
