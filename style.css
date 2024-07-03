@@ -1,3 +1,105 @@
 body {
-    font-size: 16px;
+    background-color: #f5f7fa;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.main-container {
+    margin: 40px auto;
+    width: 1300px;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    
+}
+
+.info {
+    padding: 50px;
+    line-height: 30px;
+}
+
+.info h2 {
+    font-size: 20px;
+    color:#fbd62e;
+}
+
+a {
+    text-decoration: none;
+    color:#2b2f3b;
+}
+
+
+section {
+    padding: 40px 20px 10px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    background-color: #fbd62e;
+    color:rgb(43, 47, 59);
+    list-style-type: none;
+}
+
+a:hover {
+    color:#ffffff;
+    text-decoration: underline;
+}
+.experience a:hover {
+    color: #fbd62e;
+}
+
+h4 {
+    color: #fbd62e;
+}
+
+.aside {
+    background-color:rgb(43, 47, 59);
+}
+
+.my_photo {
+    width: 100%;
+}
+
+.item {
+    color: #fbd62e;
+    padding-top: 20px;
+}
+
+.item_text {
+    color: #ffffff;
+}
+
+.item a {
+    color: #ffffff;
+}
+
+.contacts h4,
+.skills h4 {
+    padding-left: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbd62e;
+}
+
+.footer_course_link {
+    text-align: center;
+}
+
+.logo_school {
+    width: 210px;
 }
